@@ -1,0 +1,82 @@
+/* Background Color */
+body {
+    background-color: #ffffff;
+}
+
+/* My Image */
+img{
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+img a {
+    display: block;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+/* Navigation Bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar-right{
+    overflow: hidden;
+    background-color: #333;
+    position: right;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-right a{
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-right a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar-right a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+img[src="Images/iconmonstr-linkedin-4-240.png"]{
+    width: 5%;
+    height: 5%;
+    display: block;
+    margin-left: auto;
+    border-radius: 50%;
+}

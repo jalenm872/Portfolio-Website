@@ -1,6 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: 24252A;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    /* color: #edf0f1; */
+    color: #333;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #000;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136, 169, 0.8);
+}
+
 /* Background Color */
 body {
-    background-color: #ffffff;
+    background-color: #f7f9fb;
 }
 
 /* My Image */
@@ -18,65 +78,14 @@ img a {
     border-radius: 50%;
 }
 
-/* Navigation Bar */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.navbar a{
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar a:hover{
-    background-color: #ddd;
-    color: black;
-}
-
-.navbar a.active{
-    background-color: #4CAF50;
-    color: white;
-}
-
-.navbar-right{
-    overflow: hidden;
-    background-color: #333;
-    position: right;
-    top: 0;
-    width: 100%;
-}
-
-.navbar-right a{
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar-right a:hover{
-    background-color: #ddd;
-    color: black;
-}
-
-.navbar-right a.active{
-    background-color: #4CAF50;
-    color: white;
-}
-
 img[src="Images/iconmonstr-linkedin-4-240.png"]{
     width: 5%;
     height: 5%;
     display: block;
     margin-left: auto;
     border-radius: 50%;
+}
+
+.Skills{
+    text-align: center;
 }

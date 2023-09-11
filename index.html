@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cooltipz-css@2.3.0/cooltipz.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Jalen Mendoza's Portfolio</title>
 </head>
 
@@ -14,41 +16,86 @@
         <!-- Navigation Bar -->
         <header>
             <h1 class="logo">Jalen Mendoza</h1>
-            <nav>
+            <!-- <nav>
                 <ul class="nav_links">
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#about">About Me</a></li>
                 </ul>
-            </nav>
-            <a class="cta" href="#"><button>Contact</button></a>
+            </nav> -->
+            <a class="cta" href="#"><button><i class="fa-solid fa-address-book"></i> Contact</button></a>
         </header>
 
-        <!-- Home -->
-        <div class = "Intro">
+        <!-- Intro to Myself -->
+        <div class = "intro">
+            <div class= "intro-text">
+                
+                <p>
+                    Welcome to my digital portfolio! I'm an aspiring Software Engineer, armed with a fresh Bachelor's degree in Computer Science from the University of Rhode Island. My journey into the world of technology has been an exhilarating one, driven by an insatiable passion for learning and a relentless curiosity about all things code.
 
-            <div class = "Socials">
-                <img src="Images/iconmonstr-linkedin-4-240.png" alt="LinkedIn" width="100" height="100">
+Throughout my academic journey, I've had the privilege of diving deep into various facets of Computer Science, from algorithms and data structures to software development and artificial intelligence. What truly sets me apart is my unwavering commitment to hands-on learning. I've been actively engaged in several exciting projects that stretch the boundaries of my knowledge, continually pushing myself to evolve as a developer.
+
+Here, you'll find a curated selection of my proudest achievements, each project representing not just a coding endeavor but a profound exploration of problem-solving, innovation, and creativity.
+
+                </p>
+                <!-- <h1 class="intro.name">Jalen</h1>
+                <h1 class="intro.name">Mendoza</h1>
+                <h2> Full-Stack Software Engineer </h2> -->
+            </div>
+            <!-- Picture of Myself -->
+            <img class = "img-self" src="Images/may-17-2023-jer-jalen-grad-61.JPG" alt="Jalen Mendoza">
+        </div>
+
+        <!-- Resume -->
+        <div class="resume">
+            <h2 class="resume-text">Always excited to learn new things. Interests in AI, CyberSecurity, and VR/AR</h2>
+            <button class="resume-button"><i class="fa-solid fa-file-pdf"></i> Resume</button>
+        </div>
+
+
+        <div class="projects" id="projects">
+
+            <div class="projects-header">
+                <h1>PROJECTS</h1>
+                <button class="github" href="https://github.com/jalenm872"><i class="fa-brands fa-github"></i> Github</button>
             </div>
 
-
-            <!-- Picture of Myself -->
-            <img src="Images/may-17-2023-jer-jalen-grad-61.JPG" alt="Jalen Mendoza" width="2233" height="2791">
-            <!-- <script src="JS/index.js"></script> -->
+            <div class = "project-set-one">
+                <a aria-label="Weather Application" data-cooltipz-dir="top">
+                    <img class="weather-img" src="Images/Weather-App.png" width="100%">
+                </a>
+                <a aria-label="Portfolio Website" data-cooltipz-dir="top">
+                    <img class="website-img" src="Images/Portfolio-Website.png" width="100%">
+                </a>
+            </div>
         </div>
 
-        <div class = "Projects" id="projects">
-            <h1>Projects</h1>
-            <h2>Here are some of my projects that I have worked on.</h2>
+        <div class = "skills">
+            <div class="skills-text">
+                <h1>SKILLS</h1>
+                <!-- <h2>Some languages I have experience in!</h2> -->
+            </div>
+            <div class="skills-set-1">
+                <h2>HTML</h2>
+                <h2>CSS</h2>
+                <h2>JavaScript</h2>
+                <h2>Python</h2>
+                <h2>Java</h2>
+                <h2>C++</h2>
+            </div>
+            <div class="skills-set-2">
+                <h2>Rust</h2>
+                <h2>SQL</h2>
+                <h2>Git</h2>
+                <h2>GitHub</h2>
+                <h2>API</h2>
+                <h2>Pygame</h2>
+            </div>
         </div>
 
-        <div class = "Skills">
-            <h1>Skills</h1>
-            <h2>Here are some of my skills.</h2>
-        </div>
-
-        <div class = "About" id="about">
-            <h1>About Me</h1>
-            <h2>Here is a little bit about myself.</h2>
+        <div class="contact-info">
+            <h1>CONTACT</h1>
+            <h3> <i class="fa-solid fa-phone"></i> (401)-450-1887</h3>
+            <h3><i class="fa-solid fa-envelope"></i> jalen.mendoza.cs@gmail.com</h3>
         </div>
 
     </body>

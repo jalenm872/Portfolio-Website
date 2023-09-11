@@ -1,57 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-*{
+
+body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: 24252A;
+    background-color: rgb(219, 218, 218);
     font-family: 'Montserrat', sans-serif;
 }
 
 .logo{
     cursor: pointer;
+    padding-left: 20px;
 }
 
-li, a, button{
+li, a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
     /* color: #edf0f1; */
     color: #333;
     text-decoration: none;
+
+}
+
+button{
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    position: fixed;
+    background-color: #333;
+    background-image: linear-gradient(90deg, #333 0%, #464545 74%);
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 6px 2px #4b4a4a;
+    z-index: 1000;
 }
 
-.nav-links{
+header .cta button{
+    background-color: rgb(134, 184, 233);
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header .cta button:hover{
+    background-color: rgb(119, 164, 209);
+}
+
+.skills-set-1, .skills-set-2, p {
+    color: #333;
+}
+
+ul.nav_links{
     list-style: none;
+    /* width: 33%; */
+    display: inline;
+    margin-left: 30px;
+    padding-left: 200px;
 }
 
-.nav-links li{
+ul.nav_links li{
     display: inline-block;
+    /* float: left; */
     padding: 0px 20px;
 }
 
-.nav-links li a{
+.nav_links li a{
     transition: all 0.3s ease 0s;
 }
 
-.nav-links li a:hover{
+.nav_links li a:hover{
     color: #000;
 }
 
+.cta{
+    width: 33%;
+}
+
 button{
-    padding: 9px 25px;
-    background-color: rgba(0,136, 169, 1);
+    padding: 15px 25px;
+    background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    /* width: 33%; */
+    display: inline;
+    float: right;
+    margin-right: 50px;
 }
 
 button:hover{
@@ -63,29 +105,192 @@ body {
     background-color: #f7f9fb;
 }
 
+.intro{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 80%;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.intro-text{
+    padding: 30px;
+    float: left;
+    margin: 0px;
+    text-align: left;
+}
+
 /* My Image */
-img{
-    width: 25%;
-    height: 25%;
+.img-self{
+    width: 20%;
+    height: 20%;
     display: block;
-    margin-left: auto;
-    border-radius: 50%;
+    margin-right: 25px;
+    border-radius: 100%;
+    border: #000;
+    padding-left: 20px;
 }
 
-img a {
+.img-self a {
     display: block;
-    margin-left: auto;
-    border-radius: 50%;
-}
-
-img[src="Images/iconmonstr-linkedin-4-240.png"]{
-    width: 5%;
-    height: 5%;
-    display: block;
-    margin-left: auto;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .Skills{
     text-align: center;
 }
+
+.resume{
+    background-color: rgb(134, 184, 233);
+    background-image: linear-gradient(90deg, rgb(134, 184, 233) 0%, rgb(199, 222, 231) 74%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.resume-text{
+    font-size: 20px;
+}
+
+.resume-button{
+    margin-right: 40px;
+}
+
+.projects{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.projects-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-set-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-set-one a{
+    display: block;
+}
+
+.weather-img{
+    padding-right: 10px;
+    border-color:#000;
+}
+
+.website-img{
+    border-color:#000;
+    border-width: 15px;
+    border-radius: 5px;
+}
+
+.weather-app{
+    width: 10%;
+    height: 20%;
+}
+
+.weather-app-image{
+    width: 10%;
+    height: 20%;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(134, 184, 233);
+    background-image: linear-gradient(90deg, rgb(134, 184, 233) 0%, rgb(199, 222, 231) 74%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.skills-text{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+@media (max-width: 900px) {
+    h1.logo {
+        font-size: 22px !important;
+    }
+    .intro{
+        max-width: 100% !important;
+        padding-bottom: 10px;
+        padding-top: 50px;
+    }
+    .img-self{
+        display: none;
+    }
+    .resume{
+
+        display: block;
+    }
+    .resume .resume-text {
+        text-align: center !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .resume .resume-button {
+        margin-right: 0px !important;
+        display: block !important;
+        margin: 0 auto !important;
+        float: none !important;
+    }
+    .skills {
+        display: block;
+        padding-top: 20px !important;
+    }
+    .skills .skills-text {
+        padding-top: 0px !important;
+        text-align: center !important;
+    }
+    .skills-set-1, .skills-set-2 {
+        display: block !important;
+        margin: 0 auto !important;
+        float: none !important;
+        text-align: center !important;
+    }
+    .projects {
+        display: block;
+        padding-top: 20px !important;
+    }
+    .project-set-one {
+        display: block !important;
+        margin: 0 auto !important;
+        float: none !important;
+        text-align: center !important;
+    }
+    .project-set-one img {
+        width: 80% !important;
+    }
+
+    .contact-info {
+        display: block;
+        padding-top: 20px !important;
+        text-align: center !important;
+    }
+  }

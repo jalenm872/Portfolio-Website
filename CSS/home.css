@@ -158,10 +158,6 @@ body {
     font-size: 20px;
 }
 
-.resume-button{
-    margin-right: 40px;
-}
-
 .projects{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -246,19 +242,20 @@ body {
         display: none;
     }
     .resume{
-
         display: block;
     }
     .resume .resume-text {
         text-align: center !important;
         padding-left: 5px !important;
         padding-right: 5px !important;
+        font-size: 15px;
     }
-    .resume .resume-button {
+    .resume-button {
         margin-right: 0px !important;
-        display: block !important;
         margin: 0 auto !important;
+        align-items: center !important;
         float: none !important;
+        display: block !important;
     }
     .skills {
         display: block;

@@ -12,67 +12,71 @@
 </head>
 
 <html>
-    <body>
+    <body id="top">
         <!-- Navigation Bar -->
         <header>
             <h1 class="logo">Jalen Mendoza</h1>
-            <!-- <nav>
-                <ul class="nav_links">
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About Me</a></li>
-                </ul>
-            </nav> -->
             <a class="cta" href="#"><button><i class="fa-solid fa-address-book"></i> Contact</button></a>
         </header>
 
         <!-- Intro to Myself -->
         <div class = "intro">
             <div class= "intro-text">
-                
+                <!-- Intro Paragraph -->
                 <p>
-                    Welcome to my digital portfolio! I'm an aspiring Software Engineer, armed with a fresh Bachelor's degree in Computer Science from the University of Rhode Island. My journey into the world of technology has been an exhilarating one, driven by an insatiable passion for learning and a relentless curiosity about all things code.
+                    Welcome to my website portfolio! I'm an aspiring Software Engineer, armed with a fresh Bachelor's degree in Computer
 
-Throughout my academic journey, I've had the privilege of diving deep into various facets of Computer Science, from algorithms and data structures to software development and artificial intelligence. What truly sets me apart is my unwavering commitment to hands-on learning. I've been actively engaged in several exciting projects that stretch the boundaries of my knowledge, continually pushing myself to evolve as a developer.
+                    Science from the University of Rhode Island. My journey into the world of technology has been an exhilarating one, 
 
-Here, you'll find a curated selection of my proudest achievements, each project representing not just a coding endeavor but a profound exploration of problem-solving, innovation, and creativity.
+                    driven by passion for learning and a relentless curiosity about all things software.
+
+                    Throughout my academic journey, I've had the privilege of diving deep into various facets of Computer Science, 
+
+                    from algorithms and data structures to software development. What truly sets me apart is my unwavering commitment to
+                    
+                    hands-on learning. I've been actively engaged in several exciting projects that stretch the boundaries of my knowledge,
+
+                    continually pushing myself to evolve as a developer.
+
+                    Here, you'll find a curated selection of my proudest achievements, each project representing not just a coding endeavor 
+
+                    but a profound exploration of problem-solving, innovation, and creativity.
 
                 </p>
-                <!-- <h1 class="intro.name">Jalen</h1>
-                <h1 class="intro.name">Mendoza</h1>
-                <h2> Full-Stack Software Engineer </h2> -->
             </div>
             <!-- Picture of Myself -->
-            <img class = "img-self" src="Images/may-17-2023-jer-jalen-grad-61.JPG" alt="Jalen Mendoza">
+            <img class = "img-self" src="images/may-17-2023-jer-jalen-grad-61.JPG" alt="Jalen Mendoza">
         </div>
 
         <!-- Resume -->
         <div class="resume">
             <h2 class="resume-text">Always excited to learn new things. Interests in AI, CyberSecurity, and VR/AR</h2>
-            <button class="resume-button"><i class="fa-solid fa-file-pdf"></i> Resume</button>
+            <a href="files/Mendoza_Resume.pdf" target="_blank"><button class="resume-button"><i class="fa-solid fa-file-pdf"></i> Resume</button></a>
+            <!-- <button class="resume-button" href="files/Mendoza_Resume.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> Resume</button> -->
         </div>
 
-
+        <!-- Projects -->
         <div class="projects" id="projects">
 
             <div class="projects-header">
                 <h1>PROJECTS</h1>
-                <button class="github" href="https://github.com/jalenm872"><i class="fa-brands fa-github"></i> Github</button>
+                <button class="github" onClick="window.open('https://github.com/jalenm872');"><i class="fa-brands fa-github"></i> Github</button>
             </div>
 
             <div class = "project-set-one">
-                <a aria-label="Weather Application" data-cooltipz-dir="top">
-                    <img class="weather-img" src="Images/Weather-App.png" width="100%">
+                <a href="weather/" target="_blank" aria-label="Weather Application" data-cooltipz-dir="top">
+                    <img class="weather-img" src="images/Weather-App.png" width="100%">
                 </a>
-                <a aria-label="Portfolio Website" data-cooltipz-dir="top">
-                    <img class="website-img" src="Images/Portfolio-Website.png" width="100%">
+                <a href="#top"aria-label="Portfolio Website" data-cooltipz-dir="top">
+                    <img class="website-img" src="images/Portfolio-Website.png" width="100%">
                 </a>
             </div>
         </div>
 
+        <!-- Skills -->
         <div class = "skills">
             <div class="skills-text">
                 <h1>SKILLS</h1>
-                <!-- <h2>Some languages I have experience in!</h2> -->
             </div>
             <div class="skills-set-1">
                 <h2>HTML</h2>
@@ -92,6 +96,7 @@ Here, you'll find a curated selection of my proudest achievements, each project 
             </div>
         </div>
 
+        <!-- Contact -->
         <div class="contact-info">
             <h1>CONTACT</h1>
             <h3> <i class="fa-solid fa-phone"></i> (401)-450-1887</h3>

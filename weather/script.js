@@ -6,7 +6,7 @@ const sucessCallback = (position) => {
     let lon = position.coords.longitude; 
     //Get the name of the city
     fetch(
-        "http://api.openweathermap.org/geo/1.0/reverse?lat="+lat+"&lon="+lon+"&limit=1&appid=b222be32564b5a976119b9aed1c84a8d"
+        "https://api.openweathermap.org/geo/1.0/reverse?lat="+lat+"&lon="+lon+"&limit=1&appid=b222be32564b5a976119b9aed1c84a8d"
     )
     .then(response => {
         // handle the response
@@ -47,7 +47,7 @@ function getLatLon() {
     let searchInput = document.querySelector(".search-bar").value;
     // API call to get the latitude and longitude of the city
     fetch(
-        "http://api.openweathermap.org/geo/1.0/direct?q="+searchInput+"&limit=1&appid=b222be32564b5a976119b9aed1c84a8d"
+        "https://api.openweathermap.org/geo/1.0/direct?q="+searchInput+"&limit=1&appid=b222be32564b5a976119b9aed1c84a8d"
     )
     .then(response => {
         // handle the response
@@ -91,7 +91,7 @@ function getWeather(lat, lon, name) {
         document.querySelector(".city-temp").innerText = temp + "°C";
         document.querySelector(".city-description").innerText = description;
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = windSpeed + " km/h";
+        document.querySelector(".wind").innerText = "Wind Speed: "+ windSpeed + " km/h";
         document.querySelector(".search-bar").value = "";
     })
     .catch(error => {
@@ -106,7 +106,7 @@ function updateWeather(){
     let searchInput = document.querySelector(".search-bar").value;
     // API call to get the latitude and longitude of the city
     fetch(
-        "http://api.openweathermap.org/geo/1.0/direct?q="+searchInput+"&limit=1&appid=b222be32564b5a976119b9aed1c84a8d"
+        "https://api.openweathermap.org/geo/1.0/direct?q="+searchInput+"&limit=1&appid=b222be32564b5a976119b9aed1c84a8d"
     )
     .then(response => {
         // handle the response
